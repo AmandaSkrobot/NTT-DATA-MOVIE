@@ -8,7 +8,7 @@ import { MovieData, Search } from "./main-model";
 @Injectable({providedIn: 'root'})
 export class MainService {
 
-private url = ' http://www.omdbapi.com/?i='
+private url = ' https://www.omdbapi.com/?i='
 ApiKey = '&apikey=8c68a1a3';
 id = 'tt3896198';
 
