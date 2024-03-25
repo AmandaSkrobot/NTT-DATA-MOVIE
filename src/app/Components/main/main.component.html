@@ -1,0 +1,20 @@
+
+
+<main>
+   <div class="container-flex flex-wrap img-container-bg">
+      <h1>NTT Max</h1>
+       <app-quote></app-quote>
+        <div class="input-group mb-3" style="width: 350px;margin: 40px 0 0 0;">
+           <input [(ngModel)]="movieInput" (input)="onInputChange()" type="text" class="form-control" placeholder="Busque um filme..." aria-label="Search" aria-describedby="basic-addon2">
+           <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" (click)="OnClick(movieInput)">buscar</button>
+           </div>
+        </div>
+     </div>
+     <app-container-cards  [moviesResult$]="moviesResult$"></app-container-cards>
+</main>   
+
+
+
+
+<app-footer></app-footer>

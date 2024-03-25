@@ -1,0 +1,46 @@
+
+a {
+	color:rgb(255, 255, 255);
+	text-decoration:none;
+	cursor: pointer;
+	text-align: center;
+}
+
+img {
+	width: 300px;	
+	border-radius:2%;
+
+}
+
+h5 {
+
+	width: 280px;
+	height: 60px;
+}
+
+.card-title {
+
+	width: 100%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	background-color:#570a96 ;
+	opacity: 0.9;
+	text-transform: uppercase;
+}
+
+.card-title:hover{
+	
+	background-color:#a91481;
+	color: rgb(255, 255, 255);
+	transition: .5s;
+
+}	
+
+.favIcon{
+
+	margin:5px ;
+	align-self: start;
+}

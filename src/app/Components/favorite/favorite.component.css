@@ -1,0 +1,34 @@
+.FavIcon-true {
+   
+  
+
+    width: 10px;
+    background-image:url('../../../assets/imgs/heart-fill.svg');    
+    padding: 20px;
+    background-color: aliceblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+}
+.FavIcon-false {
+
+    outline: 0;
+    border: 0;
+    width: 10px;
+    background-image: url('../../../assets/imgs/heart.svg');
+    padding: 20px;
+    background-color: aliceblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+
+}   
+
+
+.favIcon{
+
+
+    margin:0 0 430px 20px ;
+}

@@ -1,0 +1,21 @@
+<div  class="container-flex flex-wrap" style="display:flex;justify-content: center;align-items: center; width: 100%; background-color: rgb(18, 14, 29);">
+
+
+@for (movie of moviesResult$ ;track movie; let i= $index){
+
+        <div class="card bg-dark text-white align-content-center" style="width: 300px;margin:5px;">
+          <img class="card-img" src="{{movie.Poster}}" alt="Card image" style="width: 100%;margin: 0; padding: 0; border: 0; height: 420px;" />
+          <div class="card-img-overlay"  style="display:flex;justify-content: space-between;align-items: flex-end;padding: 0;" >
+           <div><app-favorite  [ID] =[movie.imdbID] ></app-favorite></div>
+          
+            <app-card-detail [moviesResult$] = "moviesResult$"[movieItems$]="movieItems$" [routeID$] = "movie.imdbID"  ></app-card-detail>
+          </div>
+          <h5 class="card-title"> 
+                <a  [routerLink]="['/card-detail/', movie.imdbID]" routerLinkActive="active" (click)="OnClick(movie.imdbID)">
+                {{movie.Title}}   
+                </a> 
+           </h5>
+        </div>
+       
+ }
+</div>

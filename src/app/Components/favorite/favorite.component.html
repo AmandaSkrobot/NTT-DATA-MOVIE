@@ -1,0 +1,16 @@
+
+ @if(isFavorite) {   
+    
+    <button class="FavIcon-true favIcon" (click)="RemoveFromLocalStorage(ID)" > </button>
+}
+
+@if(!isFavorite) {
+     
+    <button  class="FavIcon-false favIcon" (click)="saveToLocalStorage(ID)">  </button>
+}
+
+
+
+
+
+
