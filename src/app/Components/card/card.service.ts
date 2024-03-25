@@ -5,7 +5,7 @@ import { MovieData } from "../main/main-model";
 
 @Injectable({ providedIn: "root" })
 export class CardService {
-  private url = " http://www.omdbapi.com/?apikey=";
+  private url = " https://www.omdbapi.com/?apikey=";
   ApiKey = "8c68a1a3";
   itemsResults: any;
 
